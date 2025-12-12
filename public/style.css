@@ -1,0 +1,235 @@
+/* --- 0. Global Setup & Typography --- */
+:root {
+    --primary-blue: #1E90FF; /* Trust, Intelligence */
+    --secondary-green: #32CD32; /* Growth, Opportunity */
+    --accent-orange: #FFA500; /* Creativity, Energy */
+    --neutral-white: #FFFFFF;
+    --neutral-gray-light: #f4f7fa;
+    --text-dark: #333;
+    --font-primary: 'Inter', sans-serif;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--neutral-white);
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    margin-bottom: 0.5em;
+}
+
+.primary-color { color: var(--primary-blue); }
+.primary-bg { background-color: var(--primary-blue); color: var(--neutral-white); }
+.secondary-color { color: var(--secondary-green); }
+.accent-color { color: var(--accent-orange); }
+
+/* --- 1. Header & Navigation --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--neutral-white);
+    box-shadow: var(--shadow-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+}
+
+.main-header nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.main-header nav a:hover, .main-header nav a.active {
+    color: var(--primary-blue);
+}
+
+/* --- 2. Landing Page Hero --- */
+.landing-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 5%;
+    min-height: 70vh;
+    background: linear-gradient(135deg, var(--neutral-gray-light) 0%, var(--neutral-white) 100%);
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s, opacity 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.hero-image {
+    padding-left: 2rem;
+}
+
+/* --- 3. Features Section --- */
+.features-section {
+    padding: 4rem 5%;
+    text-align: center;
+    background-color: var(--neutral-white);
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: var(--neutral-gray-light);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    flex: 1;
+    max-width: 300px;
+    transition: background-color 0.3s;
+}
+
+.feature-card:hover {
+    background-color: #e6e9ee;
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--secondary-green);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+/* --- 4. Quiz Styles (Shared/Common) --- */
+.quiz-container, .results-container, .ai-dashboard {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--neutral-white);
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+}
+
+.quiz-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.question-card {
+    background-color: var(--neutral-gray-light);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.question-card p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.option-label {
+    display: block;
+    background-color: var(--neutral-white);
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, border 0.2s;
+    border: 1px solid #ddd;
+}
+
+.option-label:hover {
+    background-color: #e6f0ff;
+    border-color: var(--primary-blue);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: var(--primary-blue);
+}
+
+#submit-quiz {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--secondary-green);
+    color: var(--neutral-white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit-quiz:hover {
+    background-color: #28a828;
+}
+
+/* --- 5. Footer --- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: var(--neutral-white);
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}

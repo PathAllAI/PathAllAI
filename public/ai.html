@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathAll AI - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght{400;600;800}&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">PathAll AI</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Start Quiz</a>
+            <a href="ai.html" class="active">AI Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="ai-dashboard">
+        <h2 class="secondary-color"><i class="fas fa-chart-line"></i> Personalized AI Dashboard</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">This is where your long-term progress, detailed roadmaps, and chat assistant will live.</p>
+
+        <div id="dashboard-widgets" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>3/6/12 Month Study Plan</h3>
+                <p>Detailed steps for exam preparation, projects, and volunteering (Coming Soon in V1.1).</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-comments"></i>
+                <h3>AI Chat Assistant</h3>
+                <p>Ask our LLM any question about majors, universities, or your profile (Coming Soon in V1.2).</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clipboard-check"></i>
+                <h3>Progress Tracker</h3>
+                <p>Monitor completion of roadmap tasks and skill-building (Coming Soon in V1.3).</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bell"></i>
+                <h3>Personalized Reminders</h3>
+                <p>Deadlines, application dates, and study prompts (Coming Soon in V1.4).</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="results.html" class="cta-button primary-bg">Review Last Analysis <i class="fas fa-arrow-left"></i></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PathAll AI. Find Your Future.</p>
+    </footer>
+    <script src="ai.js"></script> 
+</body>
+</html>
