@@ -164,7 +164,7 @@ async function analyzeWithAI(answers) {
   toast("Analyzing answers with AI...");
 
   try {
-    const resp = await fetch("https://sanzharx-pathallai.hf.space/predict", {
+    const resp = await fetch("https://pathallai.sanzhar-tastemir.workers.dev", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ answers })
