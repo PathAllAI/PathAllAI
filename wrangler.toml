@@ -1,0 +1,6 @@
+name = "pathallai"
+main = "src/index.js"   # Or index.ts if TypeScript
+compatibility_date = "2025-12-12"
+
+[assets]
+directory = "./public"   # Your HTML/CSS/JS folder
