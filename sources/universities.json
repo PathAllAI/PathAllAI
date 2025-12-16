@@ -1,0 +1,96 @@
+{
+  "universities": [
+    {
+      "id": "ImperialCollegeLondon",
+      "name": "Imperial College London",
+      "country": "United Kingdom",
+      "qs_rank": 2,
+      "official_domains": ["imperial.ac.ak"],
+      "sources": [
+        {
+          "url": "https://www.imperial.ac.uk/study/apply/",
+          "category": "admissions",
+          "level": "postgraduate",
+          "language": "en",
+          "last_verified": "2025-12-16"
+        },
+        {
+          "url": "https://www.imperial.ac.uk/study/fees-and-funding/postgraduate-taught/grants-scholarships/",
+          "category": "scholarship",
+          "level": "postgraduate",
+          "language": "en",
+          "last_verified": "2025-12-16"
+        }
+      ]
+    },
+    {
+      "id": "CarnegieMellonUniversity",
+      "name": "Carnegie Mellon University",
+      "country": "United States of America",
+      "qs_rank": 52,
+      "official_domains": ["cmu.edu"],
+      "sources": [
+        {
+          "url": "https://www.cmu.edu/admission/admission",
+          "category": "admissions",
+          "level": "undergraduate",
+          "language": "en",
+          "last_verified": "2025-12-16"
+        },
+        {
+          "url": "https://www.cmu.edu/sfs/financial-aid/types/scholarships-and-grants/",
+          "category": "scholarship",
+          "level": "undergraduate",
+          "language": "en",
+          "last_verified": "2025-12-16"
+        }
+      ]
+    },
+    {
+      "id": "kaist",
+      "name": "KAIST",
+      "country": "South Korea",
+      "qs_rank": 56,
+      "official_domains": ["kaist.ac.kr"],
+      "sources": [
+        {
+          "url": "https://admission.kaist.ac.kr/undergraduate/",
+          "category": "admissions",
+          "level": "undergraduate",
+          "language": "en",
+          "last_verified": "2025-01-01"
+        },
+        {
+          "url": "https://admission.kaist.ac.kr/undergraduate/scholarships/",
+          "category": "scholarship",
+          "level": "undergraduate",
+          "language": "en",
+          "last_verified": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "id": "kaist",
+      "name": "KAIST",
+      "country": "South Korea",
+      "qs_rank": 56,
+      "official_domains": ["kaist.ac.kr"],
+      "sources": [
+        {
+          "url": "https://admission.kaist.ac.kr/undergraduate/",
+          "category": "admissions",
+          "level": "undergraduate",
+          "language": "en",
+          "last_verified": "2025-01-01"
+        },
+        {
+          "url": "https://admission.kaist.ac.kr/undergraduate/scholarships/",
+          "category": "scholarship",
+          "level": "undergraduate",
+          "language": "en",
+          "last_verified": "2025-01-01"
+        }
+      ]
+    }
+  ]
+}
